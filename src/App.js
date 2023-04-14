@@ -36,6 +36,8 @@ function App() {
             <NavBarTest />
             <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/:tokenId" component={Home} />
+                
                 <Route exact path="/events" component={Events} />
                 <Route path="/events/:id" component={Paath} />
                 <Route path="/new-event" render={() => <NewEvent events={events} />} />
